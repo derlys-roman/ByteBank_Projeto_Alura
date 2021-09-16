@@ -1,10 +1,16 @@
 fun main(){
-    val derlys = Funcionario(
-        nome = "Derlys",
-        cpf = "482.532.563-62",
-        1890.0,
-        0
-    )
-    println(derlys.nome)
+    val dao = WrvrDAO()
+    val derlys = Funcionario()
+    derlys.nome = "Derlys"
+    val mario = Funcionario()
+    mario.nome = "Mario"
+    val valeria = Funcionario()
+    valeria.nome = "Valeria"
+    dao.post(derlys)
+    dao.post(mario)
+    dao.post(valeria)
+    println(dao.get())
+
+
 
 }
