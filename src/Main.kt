@@ -14,7 +14,7 @@ fun main(){
     derlys.cpf = "789238978-43"
     derlys.nome = "Derlys"
     derlys.salario = 1580.90
-    derlys.tipo = 0
+    derlys.tipo = 1
     val mario = Estagiario()
     mario.nome = "Mario"
     val valeria = Estagiario()
@@ -23,7 +23,7 @@ fun main(){
     dao.post(mario)
     dao.post(valeria)
     println(dao.get())
-
+    derlys.autentica(43)
 
 
 }

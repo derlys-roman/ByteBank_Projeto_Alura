@@ -23,8 +23,16 @@ abstract class Funcionario{
         }
     }
     fun autentica(senha: Int){
-        if(tipo == 1){
+
+        /**
+         * Tell don't ask and fail fast
+         */
+        if(tipo != 1){
             // pode autenticar
+            println("não pode autenticar ")
+            return
         }
+
+        println("autentiquese")
     }
 }
